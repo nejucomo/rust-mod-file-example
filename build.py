@@ -26,7 +26,7 @@ def main(args = sys.argv[1:]):
 
             for path in listdir_tree(casedir):
                 header = './%s' % (path,)
-                f.write('%s\n%s\n\n```' % (path, '~' * len(header)))
+                f.write('%s\n%s\n\n```\n' % (path, '~' * len(header)))
 
                 with file(os.path.join(casedir, path), 'r') as src:
                     for line in src:
