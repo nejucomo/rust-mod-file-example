@@ -15,7 +15,8 @@ case_0_monolithic
 root.rs
 ~~~~~~~~~
 
-```#[link(name = "case_0_monolithic", vers = "0.1", author = "nejucomo@gmail.com")];
+```
+#[link(name = "case_0_monolithic", vers = "0.1", author = "nejucomo@gmail.com")];
 #[crate_type = "lib"];
 
 
@@ -32,7 +33,8 @@ case_1_external_b
 root.rs
 ~~~~~~~~~
 
-```#[link(name = "case_1_external_b", vers = "0.1", author = "nejucomo@gmail.com")];
+```
+#[link(name = "case_1_external_b", vers = "0.1", author = "nejucomo@gmail.com")];
 #[crate_type = "lib"];
 
 
@@ -44,7 +46,8 @@ pub mod a {
 a/b.rs
 ~~~~~~~~
 
-```pub static x: uint = 42u;
+```
+pub static x: uint = 42u;
 ```
 
 case_2_external_monolithic_a
@@ -53,7 +56,8 @@ case_2_external_monolithic_a
 root.rs
 ~~~~~~~~~
 
-```#[link(name = "case_2_external_monolithic_a", vers = "0.1", author = "nejucomo@gmail.com")];
+```
+#[link(name = "case_2_external_monolithic_a", vers = "0.1", author = "nejucomo@gmail.com")];
 #[crate_type = "lib"];
 
 
@@ -64,6 +68,7 @@ a.rs
 ~~~~~~
 
 ```
+
 pub mod b {
     pub static x: uint = 42u;
 }
@@ -75,7 +80,8 @@ case_3_external_a_and_b
 root.rs
 ~~~~~~~~~
 
-```#[link(name = "case_3_external_a_and_b", vers = "0.1", author = "nejucomo@gmail.com")];
+```
+#[link(name = "case_3_external_a_and_b", vers = "0.1", author = "nejucomo@gmail.com")];
 #[crate_type = "lib"];
 
 
@@ -85,13 +91,15 @@ pub mod a;
 a.rs
 ~~~~~~
 
-```pub mod b;
+```
+pub mod b;
 ```
 
 b.rs
 ~~~~~~
 
-```pub static x: uint = 42u;
+```
+pub static x: uint = 42u;
 ```
 
 
